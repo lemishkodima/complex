@@ -1,0 +1,5 @@
+{
+  "/(root)/contact/page": "app/(root)/contact/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/i18n/[locale]/[ns]/route": "app/api/i18n/[locale]/[ns]/route.js"
+}

@@ -1,0 +1,9 @@
+@import "/app/globals.scss";
+
+.services-about {
+  @apply py-[60px] xl:py-20;
+
+  &__title {
+    @apply text__medium-30 mx-auto text-center mb-[120px] md:text__medium-40 md:max-w-[642px] lg:text__medium-60 lg:max-w-[912px];
+  }
+}

@@ -1,0 +1,24 @@
+@import "/app/globals.scss";
+.contactsInformation {
+  @apply py-[60px] xl:py-20;
+
+  &__section {
+    @apply flex  max-lg:gap-[84px] lg:justify-between max-sm:flex-col max-sm:gap-0;
+
+    &:first-child {
+      @apply border-b lg:border-platinum-10 border-dark-10 md:pb-[60px] pb-20;
+    }
+
+    &:last-child {
+      @apply md:pt-[60px] pt-20;
+    }
+  }
+
+  &__title {
+    @apply text__medium-30 max-sm:mb-10;
+  }
+
+  &__text {
+    @apply text__medium-14 uppercase;
+  }
+}

@@ -1,0 +1,88 @@
+@import "/app/globals.scss";
+
+.portfolio {
+  @apply py-[60px] xl:py-20;
+
+  &__container {
+    @apply grid grid-cols-1 md:grid-cols-6 gap-10 lg:gap-20;
+  }
+
+  &__item {
+    @apply md:col-span-2;
+    // &:nth-child(1) {
+    //   @apply md:col-span-4;
+    // }
+    // &:nth-child(3) {
+    //   @apply md:col-span-2;
+    // }
+    // &:nth-child(4) {
+    //   @apply md:col-span-4 #{!important};
+    // }
+    // &:nth-child(2n) {
+    //   @apply md:col-span-4;
+    // }
+    // &:nth-child(3n) {
+    //   @apply md:col-span-4;
+    // }
+    // &:nth-child(3n) {
+    //   @apply md:col-span-4;
+    // }
+    // &:nth-child(5n) {
+    //   @apply md:col-span-4;
+    // }
+
+    // &:nth-child(3n + 1) {
+    //   @apply md:col-span-4;
+    // }
+    &:nth-child(4n) {
+      @apply md:col-span-4;
+    }
+    &:nth-child(4n-3) {
+      @apply md:col-span-4;
+    }
+    // &:nth-child(3n + 1) {
+    //   @apply md:col-span-4;
+    // }
+  }
+
+  &__imageContainer {
+    @apply lg:h-[480px] h-[212px];
+  }
+
+  &__itemImage {
+    @apply object-cover;
+  }
+
+  &__properties {
+    @apply lg:flex-between;
+  }
+  &__itemName {
+    @apply text__medium-20 mt-5;
+  }
+  //   <ul>
+  //   <li>Item 1</li><!-- Will have the styles applied -->
+  //   <li>Item 2</li>
+  //   <li>Item 3</li>
+  //   <li>Item 4</li> <!-- Will have the styles applied -->
+  //   <li>Item 5</li>
+  //   <li>Item 6</li>
+  //   <li>Item 7</li><!-- Will have the styles applied -->
+  //   <li>Item 8</li>
+  //   <li>Item 9</li>
+  //   <li>Item 10</li><!-- Will have the styles applied -->
+  //   <li>Item 11</li>
+  //   <li>Item 12</li>
+  //   <li>Item 13</li><!-- Will have the styles applied -->
+  // </ul>
+  &__itemCategory {
+    @apply text__medium-14 text-gold  lg:mt-5 uppercase;
+  }
+
+  &__info {
+    @apply mb-10 flex-between w-1/2 ml-auto max-xl:w-full max-sm:flex-col max-sm:gap-10 max-sm:items-start;
+  }
+
+  &__infoText {
+    @apply max-w-[394px]  lg:uppercase;
+  }
+}

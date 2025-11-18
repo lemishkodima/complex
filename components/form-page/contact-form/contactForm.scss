@@ -1,0 +1,12 @@
+@import "/app/globals.scss";
+
+.contactForm {
+  @apply py-[60px] xl:py-20;
+  &__container {
+    @apply md:flex gap-10 justify-between;
+  }
+
+  &__title {
+    @apply whitespace-nowrap max-md:mb-10;
+  }
+}

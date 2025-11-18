@@ -1,0 +1,22 @@
+@import "/app/globals.scss";
+
+.about {
+  @apply py-[60px] xl:py-20;
+
+  &__title {
+    @apply text__medium-30 md:text__medium-40 xl:text__medium-60 text-center mb-[60px] xl:mb-20;
+  }
+
+  &__info {
+    @apply md:w-1/2 md:ml-auto text__regular-20 uppercase mb-10;
+  }
+
+  &__imgContainer {
+    @apply h-[100vh] lg:h-[75vh];
+    // width: 100px;
+    // height: 100px;
+    // position: relative;
+    // border-radius: 50%;
+    // overflow: hidden;
+  }
+}

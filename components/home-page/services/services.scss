@@ -1,0 +1,28 @@
+@import "/app/globals.scss";
+
+.services {
+  @apply py-[60px] xl:py-20  md:flex justify-between items-start;
+
+  &__title {
+    @apply text__medium-20 text-center mb-[60px] xl:mb-20;
+  }
+
+  &__info {
+    @apply md:w-1/2 md:ml-auto text__regular-20;
+  }
+
+  &__infoTitle {
+    @apply text__medium-30 md:text__medium-40 lg:text__medium-60 mb-5 uppercase;
+  }
+
+  &__imgContainer {
+    @apply w-full h-[932px] md:h-[1194px] lg:h-[512px] relative;
+  }
+
+  &__infoText {
+    @apply mb-10 text-silver text__regular-16;
+    &:last-child {
+      @apply mb-20;
+    }
+  }
+}

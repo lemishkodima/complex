@@ -1,0 +1,32 @@
+@import "/app/globals.scss";
+.input {
+  @apply bg-dark outline-none border-b border-platinum-10  pb-5 w-full  md:max-w-[402px] text__medium-20;
+
+  &__after {
+    @apply bg-platinum absolute left-0  h-[1px];
+    animation: expandWidth 1.5s ease;
+
+    &-active {
+      @apply w-full;
+    }
+  }
+
+  &__container {
+  }
+
+  &__label {
+    @apply text__label text-silver mb-5 block;
+  }
+
+  &::placeholder {
+    @apply uppercase text-platinum;
+  }
+}
+@keyframes expandWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; /* Set the final width to 100% */
+  }
+}

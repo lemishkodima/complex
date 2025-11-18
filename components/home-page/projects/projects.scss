@@ -1,0 +1,42 @@
+@import "/app/globals.scss";
+
+.projects {
+  @apply py-10 md:py-[60px] xl:py-20;
+
+  &__list {
+    @apply lg:flex grid grid-cols-4 gap-5 max-lg:grid-cols-2 max-sm:grid-cols-1;
+  }
+
+  &__item {
+    @apply transition-all duration-700  lg:w-1/4;
+    &:hover {
+      @apply lg:w-1/2;
+    }
+  }
+  &__imageContainer {
+    @apply h-[667px] max-lg:h-[267px] max-sm:h-[260px];
+  }
+
+  &__itemImage {
+    @apply object-cover;
+  }
+
+  &__properties {
+    @apply max-lg:flex-between;
+  }
+  &__itemName {
+    @apply text__medium-20 mt-5 max-lg:text__medium-14;
+  }
+
+  &__itemCategory {
+    @apply text__medium-14 text-gold  max-lg:mt-5 uppercase;
+  }
+
+  &__info {
+    @apply mb-10 flex-between w-1/2 ml-auto max-xl:w-full max-sm:flex-col max-sm:gap-10 max-sm:items-start;
+  }
+
+  &__infoText {
+    @apply max-w-[394px]  lg:uppercase;
+  }
+}

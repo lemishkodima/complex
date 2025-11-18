@@ -1,0 +1,72 @@
+/** components */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text__medium-12 {
+    @apply text-xs leading-[125%] font-medium tracking-[-0.28px];
+  }
+  .text__medium-14 {
+    @apply text-sm font-medium tracking-[-0.28px];
+  }
+
+  .text__medium-20 {
+    @apply text-xl font-medium leading-[125%] tracking-[-0.4px] uppercase;
+  }
+
+  .text__medium-30 {
+    @apply text-3xl font-medium leading-[125%] tracking-[-0.6px] uppercase;
+  }
+
+  .text__medium-40 {
+    @apply text-[2.5rem] font-medium leading-[150%] tracking-[-0.8px] uppercase;
+  }
+
+  .text__medium-60 {
+    @apply text-[3.75rem] font-medium leading-[125%] tracking-[-3px] uppercase;
+  }
+
+  .text__medium-80 {
+    @apply text-[5rem] font-medium leading-[125%] tracking-[-4px] uppercase;
+  }
+
+  .text__regular-14 {
+    @apply text-sm font-normal tracking-[-0.28px];
+  }
+
+  .text__regular-16 {
+    @apply text-base font-normal tracking-[-0.32px];
+  }
+
+  .text__regular-20 {
+    @apply text-xl font-normal tracking-[-0.32px];
+  }
+
+  .text__regular-30 {
+    @apply text-3xl font-normal leading-[125%]  tracking-[-0.32px];
+  }
+
+  .text__regular-40 {
+    @apply text-[2.5rem] font-normal leading-[125%]  tracking-[-0.32px];
+  }
+  .text__button {
+    @apply text-sm font-medium leading-[125%] tracking-[-0.28px] uppercase;
+  }
+
+  .text__label {
+    @apply text-xs font-medium leading-[125%] tracking-[-0.24px] uppercase;
+  }
+
+  .text__file {
+    @apply text-sm font-medium leading-[125%] tracking-[-0.28px] uppercase;
+  }
+
+  .text__placeholder {
+    @apply text-xl font-medium leading-[125%] tracking-[-0.4px] uppercase;
+  }
+
+  .text__accent {
+    @apply underline text-gold;
+  }
+}

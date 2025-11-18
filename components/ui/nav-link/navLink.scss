@@ -1,0 +1,35 @@
+@import "/app/globals.scss";
+
+.swipeLink {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.swipeLinkAfter {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  left: 0;
+}
+
+.swipeLinkAfter {
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(0, 100%, 0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.swipeLinkAfter:hover {
+  transform: translate3d(0, 0, 0);
+}
+
+.swipeLink span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.swipeLink:hover span {
+  transform: translate3d(0, -200%, 0);
+}

@@ -1,0 +1,10 @@
+@import "/app/globals.scss";
+.selectList {
+  &__title {
+    @apply text__medium-12 uppercase text-silver mb-4;
+  }
+
+  &__list {
+    @apply flex items-center gap-5 flex-wrap;
+  }
+}

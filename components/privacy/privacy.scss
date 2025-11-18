@@ -1,0 +1,37 @@
+@import "/app/globals.scss";
+.privacy {
+  @apply py-[60px] md:py-[60px] xl:py-20;
+
+  &__container {
+    @apply flex flex-col  xs:items-start sm:items-start lg:items-center;
+  }
+  &__title {
+    @apply text__medium-80 max-md:text__medium-40 flex whitespace-nowrap xs:mb-[60px] md:mb-[80px];
+  }
+  &__paragraph__one {
+    @apply mb-10 flex flex-col md:w-full lg:w-1/2 xl:w-1/2;
+  }
+  &__title__two {
+    @apply mb-2.5 text__medium-20 text-gold w-1/2 flex whitespace-nowrap md:w-full xl:w-1/2 lg:items-start lg:w-1/2;
+  }
+  &__paragraph__two {
+    @apply flex flex-col md:w-full lg:w-1/2 xl:w-1/2;
+  }
+}
+
+// size
+// // @mixin xl
+// @media only screen and (max-width: 1280px) {
+// }
+// // @mixin lg
+// @media only screen and (max-width: 992px) {
+// }
+// // @mixin md
+// @media only screen and (max-width: 768px) {
+// }
+// // @include sm
+// @media only screen and (max-width: 576px) {
+// }
+// // @mixin xs
+// @media only screen and (max-width: 430px) {
+// }

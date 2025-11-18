@@ -1,0 +1,67 @@
+@import "/app/globals.scss";
+
+.not__found {
+  display: flex;
+  margin: 80px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+}
+.container__main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.container__top {
+  display: flex;
+  width: 50%;
+  margin-left: auto;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container__bottom {
+  display: flex;
+  width: 50%;
+  margin-left: auto;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container__go-back-home {
+  display: flex;
+  width: 50%;
+  margin-left: auto;
+  gap: 10px;
+}
+// @mixin xl
+@media only screen and (max-width: 1280px) {
+}
+// @mixin lg
+@media only screen and (max-width: 992px) {
+  .not__found {
+    margin: 40px;
+  }
+}
+// @mixin md
+@media only screen and (max-width: 768px) {
+}
+// @include sm
+@media only screen and (max-width: 576px) {
+  .not__found {
+    margin: 20px;
+    flex-direction: row;
+  }
+  .container__top {
+    width: 100%;
+  }
+  .container__bottom {
+    width: 100%;
+  }
+  .container__go-back-home {
+    width: 1fr;
+    margin: 0px;
+  }
+}
+// @mixin xs
+@media only screen and (max-width: 430px) {
+}

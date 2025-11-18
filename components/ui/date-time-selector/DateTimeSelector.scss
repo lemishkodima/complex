@@ -1,0 +1,178 @@
+/* src/components/ui/date-time-selector/DateTimeSelector.scss */
+
+.date-time-selector {
+  margin-bottom: 2rem;
+  width: 100%;
+
+  &__title {
+    display: block;
+    font-size: 0.8rem; /* або інший розмір, який ви використовуєте для заголовків */
+    color: #fff; /* Білий текст для заголовка */
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  /* Стилізація самого інпута */
+  .date-time-selector__input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #333; /* Світло-сіра лінія, як в інших інпутах */
+    color: #fff; /* Білий текст для введеного значення */
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+
+    &:focus {
+      border-bottom-color: #ffc107; /* Або ваш основний акцентний колір */
+    }
+  }
+}
+
+/* === палітра сайту (sRGB) === */
+:root {
+  --svr-bg: #1B1D1B;       /* 0.107 0.113 0.107 */
+  --svr-accent: #B39B56;   /* 0.704 0.609 0.339 */
+  --svr-text: #FFFFFF;
+  --svr-border: #2B2D2B;   /* трохи світліший за фон для ліній */
+  --svr-hover: #262926;    /* ховер поверх фону */
+}
+
+/* інпут під стиль сайту */
+.date-time-selector__input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--svr-border);
+  color: var(--svr-text);
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  outline: none;
+  transition: border-bottom-color .25s ease;
+  &::placeholder { color: rgba(255,255,255,.55); }
+  &:focus { border-bottom-color: var(--svr-accent); }
+}
+
+/* popper поверх усього */
+.svr-dtp__popper { z-index: 9999; }
+
+/* календар */
+.svr-dtp__calendar {
+  font-family: inherit;
+  background: var(--svr-bg);
+  color: var(--svr-text);
+  border: 1px solid var(--svr-border);
+  box-shadow: 0 8px 24px rgba(0,0,0,.6);
+  border-radius: 0;
+}
+
+/* верхній бар */
+.svr-dtp__calendar .react-datepicker__header {
+  background: #000; /* як у тебе було */
+  border-bottom: 1px solid var(--svr-border);
+  padding: .5rem 0;
+}
+.svr-dtp__calendar .react-datepicker__current-month,
+.svr-dtp__calendar .react-datepicker__day-name {
+  color: var(--svr-text);
+  font-weight: 400;
+}
+
+/* стрілки */
+.svr-dtp__calendar .react-datepicker__navigation-icon::before {
+  border-color: var(--svr-text);
+  border-width: 1px 1px 0 0;
+  width: 8px; height: 8px;
+}
+
+/* дні */
+.svr-dtp__day {
+  color: var(--svr-text);
+  width: 2.2rem; line-height: 2.2rem;
+  margin: .166rem; border-radius: 0;
+}
+.svr-dtp__calendar .react-datepicker__day--outside-month { color: rgba(255,255,255,.35); }
+.svr-dtp__calendar .react-datepicker__day:hover {
+  background: var(--svr-hover);
+  color: var(--svr-text);
+}
+.svr-dtp__calendar .react-datepicker__day--keyboard-selected {
+  background: transparent; /* без синього фокуса */
+}
+
+/* вибраний день — акцент #B39B56 */
+.svr-dtp__calendar .react-datepicker__day--selected,
+.svr-dtp__calendar .react-datepicker__day--in-selecting-range,
+.svr-dtp__calendar .react-datepicker__day--in-range {
+  background: var(--svr-accent);
+  color: #000;
+  font-weight: 700;
+}
+
+/* час — права панель */
+.svr-dtp__calendar .react-datepicker__time-container {
+  border-left: 1px solid var(--svr-border);
+  background: var(--svr-bg);
+}
+.svr-dtp__time-item {
+  color: var(--svr-text);
+  height: 30px;
+  padding: 5px 10px;
+}
+.svr-dtp__calendar .react-datepicker__time-list-item:hover {
+  background: var(--svr-hover);
+  color: var(--svr-text);
+}
+.svr-dtp__calendar .react-datepicker__time-list-item--selected {
+  background: var(--svr-accent) !important;
+  color: #000 !important;
+  font-weight: 700;
+}
+
+/* дрібні покращення */
+.svr-dtp__calendar .react-datepicker__triangle { display: none; } /* якщо не треба “дзьобик” */
+
+
+.svr-dtp__calendar .react-datepicker__time-container {
+  background: var(--svr-bg);
+  border-left: 1px solid var(--svr-border);
+}
+
+.svr-dtp__calendar .react-datepicker__header--time {
+  background: var(--svr-bg);
+  border-bottom: 1px solid var(--svr-border);
+  color: var(--svr-text);
+}
+
+/* важливо: саме ці два класи тримають білий фон у дефолтному css */
+.svr-dtp__calendar .react-datepicker__time-container .react-datepicker__time,
+.svr-dtp__calendar .react-datepicker__time-container .react-datepicker__time-box {
+  background: var(--svr-bg);
+  border-left: none;
+}
+
+/* список часу */
+.svr-dtp__calendar .react-datepicker__time-list {
+  background: var(--svr-bg);
+}
+
+/* пункти часу */
+.svr-dtp__calendar .react-datepicker__time-list-item {
+  background: transparent;
+  color: var(--svr-text);
+}
+.svr-dtp__calendar .react-datepicker__time-list-item:hover {
+  background: var(--svr-hover);
+  color: var(--svr-text);
+}
+.svr-dtp__calendar .react-datepicker__time-list-item--selected {
+  background: var(--svr-accent) !important;
+  color: #000 !important;
+  font-weight: 700;
+}
+
+/* (опція) темний скролбар у списку часу */
+.svr-dtp__calendar .react-datepicker__time-list::-webkit-scrollbar { width: 6px; }
+.svr-dtp__calendar .react-datepicker__time-list::-webkit-scrollbar-track { background: var(--svr-bg); }
+.svr-dtp__calendar .react-datepicker__time-list::-webkit-scrollbar-thumb { background: var(--svr-accent); }

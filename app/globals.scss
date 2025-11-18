@@ -1,0 +1,105 @@
+/** components */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "../styles/theme.scss";
+
+body {
+  font-family: "Basis Grotesque Pro Light", sans-serif;
+  @apply bg-dark text-platinum;
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .flex-start {
+    @apply flex justify-start items-center;
+  }
+
+  .container {
+    @apply mx-auto  px-20  max-lg:px-10 max-sm:px-5;
+    max-width: 1440px;
+  }
+
+  .container-i {
+    @apply mx-auto  px-20  max-lg:px-10 max-sm:px-5;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@mixin xs {
+  @media only screen and (max-width: 430px) {
+    @content;
+  }
+}
+@mixin sm {
+  @media only screen and (max-width: 576px) {
+    @content;
+  }
+}
+@mixin md {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media only screen and (max-width: 992px) {
+    @content;
+  }
+}
+@mixin xl {
+  @media only screen and (max-width: 1280px) {
+    @content;
+  }
+}
+
+::-webkit-scrollbar {
+  @apply bg-gold  w-2 rounded-md;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-platinum rounded-md;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gold rounded-md;
+}
+
+[data-hidden] {
+  opacity: 0;
+}

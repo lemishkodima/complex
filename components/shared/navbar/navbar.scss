@@ -1,0 +1,16 @@
+@import "/app/globals.scss";
+.nav {
+  @apply py-[60px] max-lg:py-10;
+
+  &__container {
+    @apply flex items-center lg:flex-between;
+  }
+
+  &__links {
+    @apply uppercase flex gap-10 text__medium-14 max-lg:hidden;
+  }
+
+  &__formLink {
+    @apply uppercase flex gap-2.5 text__medium-14 text-gold;
+  }
+}

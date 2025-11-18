@@ -1,0 +1,6 @@
+.marquee {
+  &__part {
+    flex-shrink: 0;
+    margin: 0 10px;
+  }
+}

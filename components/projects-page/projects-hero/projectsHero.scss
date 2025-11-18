@@ -1,0 +1,37 @@
+@import "/app/globals.scss";
+.projectsHero {
+  @apply py-[60px] xl:py-20;
+
+  &__container {
+    @apply flex flex-col items-start mb-20 xl:flex-row xl:items-end;
+  }
+
+  &__title {
+    @apply text__medium-80 uppercase max-lg:max-w-[755px] max-sm:max-w-[410px]  max-w-[1280px] 
+    max-lg:text__medium-60 max-sm:text__medium-40 max-xl:text__medium-60 max-md:text__medium-60;
+
+    &--accent {
+      @apply text-gold relative underline;
+
+      &:after {
+        @apply bg-gold absolute left-0 right-0 bottom-1 h-3 content-none underline;
+      }
+    }
+
+    &--indent {
+      @apply mr-14  lg:mr-10;
+    }
+  }
+
+  &__image {
+    @apply inline mb-5;
+  }
+
+  &__subtitle {
+    @apply mt-10  text-left lg:absolute lg:right-0 lg:bottom-5;
+  }
+
+  &__icons {
+    @apply mb-3 inline w-16 max-lg:w-12 max-md:w-8 max-md:mb-[7px];
+  }
+}

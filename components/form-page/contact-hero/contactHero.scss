@@ -1,0 +1,39 @@
+@import "/app/globals.scss";
+.contactHero {
+  @apply py-[60px] xl:py-20;
+
+  &__container {
+    @apply flex flex-col items-start mb-20 xl:flex-row xl:items-end;
+  }
+
+  &__title {
+    @apply text__medium-80 uppercase max-lg:max-w-[667px] max-sm:max-w-[410px] max-md:max-w-[446px] max-w-[1240px] 
+    max-lg:text__medium-60 max-sm:text__medium-40 max-xl:text__medium-60 max-md:text__medium-40;
+
+    &--accent {
+      @apply text-gold relative;
+
+      &:after {
+        content: "";
+        @apply bg-gold absolute left-0 bottom-2 h-1 w-full max-md:bottom-1;
+      }
+    }
+
+    &--indent {
+      @apply ml-[116px] max-lg:ml-[84px] max-sm:ml-[58px] max-md:ml-[80px];
+    }
+  }
+
+  &__image {
+    @apply inline mb-5;
+  }
+
+  &__subtitle {
+    @apply mt-10  text-left lg:absolute lg:right-0 lg:bottom-5;
+  }
+
+  &__icons {
+    @apply mb-3 h-[60px] inline w-[60px] max-lg:w-12 max-md:w-8 max-md:mb-[7px] #{!important};
+    font-family: "Material Icons" !important;
+  }
+}

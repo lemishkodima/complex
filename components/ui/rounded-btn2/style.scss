@@ -1,0 +1,46 @@
+@import "/app/globals.scss";
+.roundedButton {
+  border-radius: 50px;
+  border: 1px solid rgba(234, 234, 234, 0.1);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px 20px 30px;
+  text-transform: uppercase;
+  @apply text__regular-14 w-fit;
+  //  @apply uppercase py-5 px-[30px] gap-2.5 flex items-center border border-platinum-10 rounded-[50px] text__medium-14  active:border-gold active:bg-gold active:text-dark transition-colors duration-300;
+  &:hover {
+    color: #1c1c1b;
+  }
+  p {
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s ease;
+    transition-delay: 250ms;
+    @apply text__regular-14;
+  }
+
+  &:hover {
+    transition: color 0.5s ease;
+    transition-delay: 250ms;
+    p {
+      transition: color 0.5s ease;
+      transition-delay: 150ms;
+      color: #1c1c1b;
+    }
+  }
+}
+
+.circle {
+  width: 100%;
+  height: 150%;
+  position: absolute;
+  border-radius: 50%;
+  top: 100%;
+
+  &:active {
+    background-color: #947f46;
+  }
+}

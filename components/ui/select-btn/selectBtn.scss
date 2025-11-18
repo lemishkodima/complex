@@ -1,0 +1,4 @@
+@import "/app/globals.scss";
+.selectBtn {
+  @apply uppercase py-5 px-[30px]  flex items-center justify-center border border-platinum-10 rounded-[50px] text__medium-14 hover:border-platinum active:bg-platinum active:text-dark transition-colors duration-300;
+}

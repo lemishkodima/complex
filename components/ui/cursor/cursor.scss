@@ -1,0 +1,22 @@
+@import "/app/globals.scss";
+.cursor {
+  @apply fixed  duration-500;
+  transition: width 0.5s ease, height 0.5s ease, background-color 0.3s ease;
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgba(234, 234, 234, 0.1);
+  border-radius: 50%;
+  pointer-events: none;
+  cursor: none !important;
+  transform: translate3d(-50%, -50%, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursorHover {
+  @apply w-[75px] h-[75px] cursor-none;
+  background-color: #b49b56;
+  background-size: cover;
+  cursor: none !important;
+}

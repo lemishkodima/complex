@@ -1,0 +1,5 @@
+@import "/app/globals.scss";
+
+.client {
+  @apply grid grid-cols-2 md:grid-cols-5;
+}

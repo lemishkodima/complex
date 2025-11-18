@@ -1,0 +1,16 @@
+@import "/app/globals.scss";
+.footer {
+  @apply bg-platinum text-dark;
+
+  @include lg {
+    @apply bg-dark text-platinum;
+  }
+
+  &__container {
+    @apply flex  pb-20 pt-16 items-start border-b border-dark-10 max-md:flex-col;
+  }
+
+  &__bottomContainer {
+    @apply flex   pt-20 pb-10 lg:text-dark text__medium-14 uppercase max-md:flex-col;
+  }
+}
