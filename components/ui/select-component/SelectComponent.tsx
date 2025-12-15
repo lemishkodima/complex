@@ -21,9 +21,9 @@ const SelectComponent = ({ control, name }: SelectListProps) => {
   const { t } = useTranslation("contact");
   const options = [
     "Google",
-    t("form.Friends"),
-    t("form.Social networks"),
-    t("form.Other"),
+    t("contact.form.source.friends"),
+    t("contact.form.source.socials"),
+    t("contact.form.source.other"),
   ];
   const setNewValue = (value: string, field: any) => {
     setValue(value);
@@ -37,10 +37,10 @@ const SelectComponent = ({ control, name }: SelectListProps) => {
       className="text__medium-20 w-full cursor-pointer rounded-none border-b border-platinum-10 bg-dark relative"
     >
       <p className="text__label text-silver mb-5 block">
-        {t("form.How did you find about us?")}
+        {t("contact.form.source.label")}
       </p>
       <p onClick={() => setIsOpen(!isOpen)} className="pb-5 flex-between">
-        {value || t("form.Select option")}
+        {value || t("contact.form.source.placeholder")}
         <KeyboardArrowDownIcon
           className={clsx("text-platinum transition-transform duration-500", {
             "rotate-180": isOpen,
@@ -54,7 +54,7 @@ const SelectComponent = ({ control, name }: SelectListProps) => {
             "h-40": isOpen,
           }
         )}
-        placeholder={t("form.Select option")}
+        placeholder={t("contact.form.source.placeholder")}
       >
         {options.map((option) => (
           <Controller

@@ -1,7 +1,7 @@
 {
-  "Kyiv, Kyiv, Ukraine": "Kyiv, Kyiv, Ukraine",
-  "Get In Touch": "Get In Touch",
-  "Join the select": "Ready for a reboot? Discover all our possibilities.",
+  "common.location.main": "common.location.main",
+  "common.cta.getInTouch": "common.cta.getInTouch",
+  "common.cta.rebootIntro": "Ready for a reboot? Discover all our possibilities.",
   "questions": {
     "You have": "You have ",
     "Questions": "questions",
@@ -16,5 +16,5 @@
     "DO YOU PROVIDE SMM": "4. IS THERE WI-FI AND PARKING ON SITE?",
     "Yes, this is one of our specialties.": "Yes, absolutely. High-speed Wi-Fi is available throughout the entire complex, including the houses and relaxation areas. We also provide free private parking for our guests for the entire duration of their stay."
   },
-  "We would love to hear from you. Let's work together.": "Now is your time. Book your ideal vacation."
+  "common.cta.bookNow": "Now is your time. Book your ideal vacation."
 }

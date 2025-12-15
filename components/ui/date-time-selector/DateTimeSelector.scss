@@ -176,3 +176,72 @@
 .svr-dtp__calendar .react-datepicker__time-list::-webkit-scrollbar { width: 6px; }
 .svr-dtp__calendar .react-datepicker__time-list::-webkit-scrollbar-track { background: var(--svr-bg); }
 .svr-dtp__calendar .react-datepicker__time-list::-webkit-scrollbar-thumb { background: var(--svr-accent); }
+
+/* рядок "дата+час" + "тривалість" */
+.date-time-row {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-end; /* вирівнюємо по нижній лінії інпутів */
+
+  /* обидва блоки займають однакову ширину */
+  > * {
+    flex: 1;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
+
+/* select у стилі інпуту дати/часу */
+.date-time-selector__input--select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border-radius: 0;
+  padding-right: 1.5rem; /* місце під "стрілочку" */
+
+  option {
+    background: var(--svr-bg);
+    color: var(--svr-text);
+  }
+}
+
+/* якщо хочеш кастомну “стрілочку” справа */
+.date-time-selector--duration {
+  position: relative;
+}
+.date-time-selector--duration::after {
+  content: "▾";
+  position: absolute;
+  right: 0;
+  bottom: 0.6rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+}
+
+.date-time-selector__hint {
+  margin-top: 0.4rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+
+  &--error {
+    color: #ff6b6b;
+  }
+}
+
+/* кольори для слотів часу */
+.svr-dtp__time-item--busy {
+  opacity: 0.4;
+}
+
+.svr-dtp__time-item--available {
+  font-weight: 600;
+}
+
+.svr-dtp__time-item--disabled {
+  opacity: 0.5;
+}

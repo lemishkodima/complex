@@ -43,7 +43,7 @@ const Services = () => {
 
   return (
     <section id="about-service" className="services-about container">
-      <h2 className="services-about__title">{t("Our passion")}</h2>
+      <h2 className="services-about__title">{t("about.about.text")}</h2>
       <div className="flex md:items-end max-md:flex-col">
         <div className="md:w-1/2">
           <div className="md:ml-auto lg:w-[630px] max-lg:mb-[60px ]">
@@ -70,7 +70,7 @@ const Services = () => {
                     }
                   )}
                 >
-                  {t("Design")}
+                  {t("about.features.card1.title")}
                 </p>
               </div>
               <div
@@ -95,7 +95,7 @@ const Services = () => {
                     }
                   )}
                 >
-                  {t("Development")}
+                  {t("about.features.card2.title")}
                 </p>
               </div>
               <div
@@ -120,7 +120,7 @@ const Services = () => {
                     }
                   )}
                 >
-                  {t("Branding")}
+                  {t("about.features.card3.title")}
                 </p>
               </div>
               <div
@@ -145,7 +145,7 @@ const Services = () => {
                     }
                   )}
                 >
-                  {t("Marketing")}
+                  {t("about.features.card4.title")}
                 </p>
               </div>
             </div>
@@ -154,7 +154,7 @@ const Services = () => {
         <div className="md:w-1/2 gap-5 max-md:gap-[60px]">
           <div className="md:mr-auto max-w-[315px] lg:max-w-[432px]">
             <h4 className="text__regular-20 lg:text__regular-30 mb-20 ">
-              {t("WE CREATE WEBSITES")}
+              {t("about.offer.text")}
             </h4>
             <ul className="min-h-[432px]">
               {shuffleArray(selectedCategory).map((category, i) => {

@@ -58,7 +58,7 @@ const ProjectHero = ({
         onClick={() => scrollTo("project-info")}
         className="mt-[60px] lg:mt-20"
       >
-        <NavLink href="#">Scroll to Explore</NavLink>
+        <NavLink href="#">about.hero.scrollCta</NavLink>
       </div>
     </section>
   );

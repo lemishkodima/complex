@@ -43,7 +43,6 @@ export default function About() {
       <AboutHero />
       <AboutImage />
       <DynamicServices />
-      <Clients />
       <DynamicSwiperComponent />
       <Cta />
     </main>

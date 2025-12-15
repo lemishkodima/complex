@@ -178,7 +178,7 @@ const MobileNavbar = () => {
               href="/projects"
               swapAnimation
             >
-              {t("projects")}
+              {t("home.nav.services")}
             </NavLink>
           </div>
         </div>
@@ -195,7 +195,7 @@ const MobileNavbar = () => {
               href="/about"
               swapAnimation
             >
-              {t("about-us")}
+              {t("home.nav.about")}
             </NavLink>
           </div>
         </div>
@@ -211,7 +211,7 @@ const MobileNavbar = () => {
               href="/contact"
               swapAnimation
             >
-              {t("lets-talk")}
+              {t("home.nav.reservation")}
             </NavLink>
           </div>
         </div>

@@ -26,7 +26,7 @@ const Footer = () => {
             >
               <NavLink href="/contact" arrow={false}>
                 <h5 className="!text__medium-20 max-w-[355px] max-lg:text-platinum text-dark max-md:mb-10 footer-element">
-                  {t("We would love to hear from you. Let's work together.")}
+                  {t("common.cta.bookNow")}
                 </h5>
               </NavLink>
             </motion.div>

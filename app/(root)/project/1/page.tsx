@@ -26,7 +26,7 @@ const Project = () => {
         title="Bank of america"
         services={[
           "Redesign",
-          "UI/UX Design",
+          "contact.interests.padelTennis",
           "Corporate Website",
           "BAck-end Development",
           "Front-end Development",

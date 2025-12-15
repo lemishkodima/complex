@@ -15,7 +15,7 @@ const Cta = () => {
   const { t } = useTranslation("translation");
   const description = useRef(null);
   const isInView = useInView(description);
-  const phrase = t("Join the select");
+  const phrase = t("common.cta.rebootIntro");
   return (
     <section className="cta">
       <div className="container">
@@ -52,7 +52,7 @@ const Cta = () => {
       >
         <ParallaxText baseVelocity={-2}>
           <NavLink href="/contact" arrow={false} classes="text__medium-80">
-            {t("Get In Touch")}
+            {t("common.cta.getInTouch")}
           </NavLink>
         </ParallaxText>
       </div>

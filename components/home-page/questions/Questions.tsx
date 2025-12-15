@@ -11,35 +11,35 @@ const Questions = () => {
   const { t } = useTranslation("translation");
   const mockQuestions = [
     {
-      question: t("questions.HOW MUCH DOES CREATING A WEBSITE COST"),
-      answer: t("questions.Outsourcing website development"),
+      question: t("faq.item1.question"),
+      answer: t("faq.item1.answer"),
     },
     {
-      question: t("questions.WHAT WILL BE REQUIRED"),
-      answer: t("questions.Explain your business"),
+      question: t("faq.item2.question"),
+      answer: t("faq.item2.answer"),
     },
     {
-      question: t("questions.HOW MUCH IS POST-DEVELOPMENT"),
-      answer: t("questions.The cost of support"),
+      question: t("faq.item3.question"),
+      answer: t("faq.item3.answer"),
     },
     {
-      question: t("questions.DO YOU PROVIDE SMM"),
-      answer: t("questions.Yes, this is one of our specialties."),
+      question: t("faq.item4.question"),
+      answer: t("faq.item4.answer"),
     },
   ];
   return (
     <section className="questions container">
       <div className="questions__container">
         <h3 className="questions__title">
-          {t("questions.You have")}
+          {t("faq.hero.youHavePrefix")}
           <span className="questions__title--accent">
-            {t("questions.Questions")}
+            {t("faq.hero.questionsWord")}
           </span>
           .
           <br/>
-          {t("questions.We have")}
+          {t("faq.hero.weHavePrefix")}
           <span className="questions__title--accent">
-            {t("questions.Answers")}
+            {t("faq.hero.answersWord")}
           </span>
           .
         </h3>

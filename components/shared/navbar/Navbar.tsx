@@ -77,13 +77,13 @@ const Navbar = () => {
           <DynamicClock classes="max-sm:hidden max-lg:ml-[177px]" />
           <div className="nav__links">
             <NavLink swapAnimation arrow={false} href="/projects">
-              {t("projects")}
+              {t("home.nav.services")}
             </NavLink>
             <NavLink swapAnimation arrow={false} href="/about">
-              {t("about-us")}
+              {t("home.nav.about")}
             </NavLink>
             <NavLink swapAnimation href="/contact" color="text-gold">
-              {t("lets-talk")}
+              {t("home.nav.reservation")}
             </NavLink>
           </div>
 

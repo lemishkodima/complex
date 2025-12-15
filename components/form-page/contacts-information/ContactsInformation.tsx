@@ -11,18 +11,18 @@ const ContactsInformation = () => {
     >
       <div className="container lg:text-platinum text-dark">
         <div className="contactsInformation__section max-w-[977px]">
-          <h4 className="contactsInformation__title">{t("Our Office")}</h4>
+          <h4 className="contactsInformation__title">{t("contact.sections.contacts.title")}</h4>
           <AddressLinks classes="max-lg:hidden" />
           <AddressLinks classes="lg:hidden" isDark />
           <div>
             <p className="contactsInformation__text max-sm:mt-5">
-              {t("Monday - Friday")}
+              {t("contact.info.workingDays")}
             </p>
             <p className="contactsInformation__text">09:00 - 18:00</p>
           </div>
         </div>
         <div className="contactsInformation__section max-w-[524px]">
-          <h4 className="contactsInformation__title">{t("In Socials")}</h4>
+          <h4 className="contactsInformation__title">{t("contact.sections.socials.title")}</h4>
           <SocialLinks classes="max-lg:hidden" />
           <SocialLinks classes="lg:hidden" isDark />
         </div>

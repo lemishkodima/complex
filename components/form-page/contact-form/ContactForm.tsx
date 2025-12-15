@@ -8,7 +8,7 @@ const ContactForm = () => {
     <section className="contactForm container ">
       <div className="contactForm__container">
         <h4 className="text__medium-30 contactForm__title">
-          {t("Write to Us")}
+          {t("contact.sections.form.title")}
         </h4>
         <Form />
       </div>

@@ -19,7 +19,7 @@ const Services = () => {
   const isInView4 = useInView(description4);
   return (
     <section className="services container">
-      <h2 className="services__title">{t("services.Our Capabilities")}</h2>
+      <h2 className="services__title">{t("home.services.list.title")}</h2>
       <ul className="services__info">
         <li className="services__item">
           <motion.div
@@ -28,8 +28,8 @@ const Services = () => {
             animate={isInView ? "open" : "closed"}
             className="footer-element"
           >
-            <h4 className="services__infoTitle">{t("services.Design")}</h4>
-            <p className="services__infoText ">{t("services.From idea")}</p>
+            <h4 className="services__infoTitle">{t("home.services.cards.accommodation.title")}</h4>
+            <p className="services__infoText ">{t("home.services.cards.accommodation.text")}</p>
           </motion.div>
         </li>
         <li className="services__item">
@@ -39,8 +39,8 @@ const Services = () => {
             animate={isInView2 ? "open" : "closed"}
             className="footer-element"
           >
-            <h4 className="services__infoTitle">{t("services.Development")}</h4>
-            <p className="services__infoText ">{t("services.High-class")}</p>
+            <h4 className="services__infoTitle">{t("home.services.cards.recovery.title")}</h4>
+            <p className="services__infoText ">{t("home.services.cards.recovery.text")}</p>
           </motion.div>
         </li>
         <li className="services__item">
@@ -50,9 +50,9 @@ const Services = () => {
             animate={isInView3 ? "open" : "closed"}
             className="footer-element"
           >
-            <h4 className="services__infoTitle">{t("services.Branding")}</h4>
+            <h4 className="services__infoTitle">{t("home.services.cards.activity.title")}</h4>
             <p className="services__infoText">
-              {t("services.Inspiring, functional")}
+              {t("home.home.services.cards.activity.text")}
             </p>
           </motion.div>
         </li>
@@ -63,9 +63,9 @@ const Services = () => {
             animate={isInView4 ? "open" : "closed"}
             className="footer-element"
           >
-            <h4 className="services__infoTitle">{t("services.Marketing")}</h4>
+            <h4 className="services__infoTitle">{t("home.services.cards.comprehensive.title")}</h4>
             <p className="services__infoText">
-              {t("services.Revolutionize your")}
+              {t("home.services.cards.comprehensive.text")}
             </p>
           </motion.div>
         </li>
@@ -78,7 +78,7 @@ const Services = () => {
           >
             <NavLink href="/about" arrow={false}>
               <RoundedButton>
-                <p>{t("services.Read more")}</p>
+                <p>{t("home.services.cards.readMoreCta")}</p>
               </RoundedButton>
             </NavLink>
           </motion.div>

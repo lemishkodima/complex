@@ -38,7 +38,7 @@ const AddressLinks = ({ classes, isDark = false }: AddressLinksProps) => {
         })}
         arrow={false}
       >
-        {t("Kyiv, Kyiv, Ukraine")}
+        {t("common.location.main")}
       </NavLink>
     </div>
   );

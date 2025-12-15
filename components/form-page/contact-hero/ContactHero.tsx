@@ -11,13 +11,13 @@ const ContactHero = () => {
   const {t} = useTranslation('contact')
   return  <div className="contactHero container">
   <div className="contactHero__container relative">
-    <h1 className="contactHero__title"><span className="contactHero__title--indent">{t('Do you have')}<ArrowForwardIcon className="contactHero__icons" /></span><span className="contactHero__title--accent">{t('questions')}</span> {t('or want to')} <span className="contactHero__title--accent">{t('collaborate')}</span> <HelpIcon  className="contactHero__icons" /> <br/> {t('Let`s talk')} <ErrorIcon  className="contactHero__icons" />
+    <h1 className="contactHero__title"><span className="contactHero__title--indent">{t('contact.hero.title.part1')}<ArrowForwardIcon className="contactHero__icons" /></span><span className="contactHero__title--accent">{t('contact.hero.title.part2')}</span> {t('contact.hero.title.part3')} <span className="contactHero__title--accent">{t('contact.hero.title.part4')}</span> <HelpIcon  className="contactHero__icons" /> <br/> {t('contact.hero.subtitle')} <ErrorIcon  className="contactHero__icons" />
     </h1>
-    <p className="text__medium-14 contactHero__subtitle uppercase">{t('SVAROG COMPLEX')}</p>
+    <p className="text__medium-14 contactHero__subtitle uppercase">{t('contact.hero.brand')}</p>
   </div>
   <div id="form-id" onClick={() => scrollTo('contact-info') }>
   <NavLink href="#" arrowDirection="bottom-right">
-    {t('Scroll to Explore')}
+    {t('about.hero.scrollCta')}
   </NavLink>
   </div>
 </div>;
